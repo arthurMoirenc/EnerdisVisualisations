@@ -1,0 +1,40 @@
+/* Série 0 — première courbe de chaque graphique */
+.chart-series-line.series0 {
+    -fx-stroke-width: 2px;
+}
+
+/* Fréquence — rouge */
+#lineChartFrequence .chart-series-line.series0 {
+    -fx-stroke: #e74c3c;
+}
+
+/* Tension — bleu */
+#lineChartTension .chart-series-line.series0 {
+    -fx-stroke: #3498db;
+}
+
+/* Puissance — vert */
+#lineChartPuissance .chart-series-line.series0 {
+    -fx-stroke: #2ecc71;
+}
+
+/* Intensité — violet */
+#lineChartIntensite .chart-series-line.series0 {
+    -fx-stroke: #9b59b6;
+}
+
+#lineChartFrequence .chart-line-symbol {
+    -fx-background-color: #e74c3c, white;
+}
+
+#lineChartTension .chart-line-symbol {
+    -fx-background-color: #3498db, white;
+}
+
+#lineChartPuissance .chart-line-symbol {
+    -fx-background-color: #2ecc71, white;
+}
+
+#lineChartIntensite .chart-line-symbol {
+    -fx-background-color: #9b59b6, white;
+}

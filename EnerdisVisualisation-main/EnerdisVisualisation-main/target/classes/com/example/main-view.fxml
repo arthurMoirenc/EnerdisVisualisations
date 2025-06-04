@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.MainController">
+
+    <TableView fx:id="tableView" layoutX="20" layoutY="10" prefWidth="550" prefHeight="780" >
+        <columns>
+            <TableColumn fx:id="dateCol" prefWidth="180" text="Date" />
+            <TableColumn fx:id="valeurCol" prefWidth="180" text="Valeur" />
+            <TableColumn fx:id="uniteCol" prefWidth="200" text="Unite" />
+        </columns>
+    </TableView>
+
+    <LineChart fx:id="lineChartFrequence" stylesheets="@style.css" layoutX="630" layoutY="10" prefWidth="550" prefHeight="190" title="Fréquence">
+        <xAxis>
+            <NumberAxis fx:id="xAxisFrequence"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxisFrequence"/>
+        </yAxis>
+    </LineChart>
+
+    <LineChart fx:id="lineChartTension" stylesheets="@style.css" layoutX="630" layoutY="210" prefWidth="550" prefHeight="190"  title="Tension">
+        <xAxis>
+            <NumberAxis fx:id="xAxisTension"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxisTension"/>
+        </yAxis>
+    </LineChart>
+
+    <LineChart fx:id="lineChartPuissance" stylesheets="@style.css" layoutX="630" layoutY="410" prefWidth="550" prefHeight="190"  title="Puissance">
+        <xAxis>
+            <NumberAxis fx:id="xAxisPuissance"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxisPuissance"/>
+        </yAxis>
+    </LineChart>
+
+    <LineChart fx:id="lineChartIntensite" stylesheets="@style.css" layoutX="630" layoutY="610" prefWidth="550" prefHeight="190"  title="Intensité">
+        <xAxis>
+            <NumberAxis fx:id="xAxisIntensite"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxisIntensite"/>
+        </yAxis>
+    </LineChart>
+
+</AnchorPane>
